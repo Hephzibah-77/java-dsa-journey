@@ -95,3 +95,28 @@ Machine code is the low-level code that is directly understood and executed by t
 
 ## Platform-Independent:
 The (.java) source code is compiled by java compiler(javac) to bytecode(.class). The JVM executes  bytecode and converts it into machine code which can run on any operating system that contains JVM . Java follows WORA(Write once run anywhere) that means the bytecode can be run on any OS which has JVM
+
+## Why doesn't Java compiler directly convert .java source code into machine code?
+Java uses the javac compiler to convert source code into bytecode. The bytecode can run on different operating systems through their respective JVMs. The JVM executes the bytecode and translates it into machine code, which supports Java's platform independence and WORA principle.
+## First Java Program
+public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}
+## Public class main
+Public - Access Modifier: Class can be accessed from outside its class
+Class - Blueprint or template for objects.
+Main - Name of the class
+Object - Actual thing created from the blueprint
+Public class main declares the public class named main 
+## public static void main(String[] args)
+This is the method
+The main() method is the entry point of a standard Java Application- execution starts from here.
+- public : public is a access modifier so it allows the main() method to be accessed from outside the class
+- static : Method belongs to class, and we call it without creating an object
+- void : Does not return a value 
+- main : Method name
+- String : It is used to store text. [] means Array. An array allows us to store multiple values of same type,
+- String[] : An array of strings.
+- args : It is a variable refers to an array of strings. 
