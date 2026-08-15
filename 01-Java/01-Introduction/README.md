@@ -11,17 +11,18 @@ Understand the basics of Java, how Java works, and write the first Java program.
 - [x] JDK
 - [x] JRE
 - [x] JVM
-- [ ] Compilation Process
-- [ ] Platform Independence
-- [ ] First Java Program
-- [ ] Comments
-- [ ] main() Method
-- [ ] System.out.println()
+- [x] Compilation Process
+- [x] Platform Independence
+- [x] First Java Program
+- [x] Comments
+- [x] main() Method
+- [x] System.out.println()
 
 ## 📈 Progress
 
 **Day 1:** Completed 2/11 Topics
 **Day 2:** Completed 6/11 Topics 
+**Day 3:** Completed 11/11 Topics 
 
 ## ✅ Status
 
@@ -116,7 +117,33 @@ The main() method is the entry point of a standard Java Application- execution s
 - public : public is a access modifier so it allows the main() method to be accessed from outside the class
 - static : Method belongs to class, and we call it without creating an object
 - void : Does not return a value 
-- main : Method name
+- main : Method where a standard Java application starts. 
 - String : It is used to store text. [] means Array. An array allows us to store multiple values of same type,
 - String[] : An array of strings.
 - args : It is a variable refers to an array of strings. 
+## System.out.println("Hello, World!");
+- System: It is a pre-defined Java class from java.lang package. It provides useful things related to the system, including standard input/output.
+- out: standard output
+-println: gives the otput to the console and moves to the next line.
+## Comments in Java
+Comment: A text written inside Java program ignored by the compiler.
+Two types: 
+1. Single line: //
+2. Multi line: /*
+                 */
+## Variables in Java:
+A variable is a named storage location used to store a value in java program.
+- Syntax: dataType variableName = value;
+Ex: int Age = 22;
+     |    |  |_Assignment Operator |
+Datatype  variable name
+- Declaration: Giving a specific datatype, variable name and not assigning a value.
+Ex: int age;
+- Initialization: Assigning a variable its first value.
+Ex: age = 20;
+- Declaration + Initialization: Declare and initializa a variable in one statement.
+Ex: int age = 20;
+- Assignment: Giving a new value to an already assigned variable.
+Ex: int age = 20;
+        age = 22;
+  The value of age changes from 20 to 22.      
