@@ -147,3 +147,24 @@ Ex: int age = 20;
 Ex: int age = 20;
         age = 22;
   The value of age changes from 20 to 22.      
+  ## Datatypes
+  A data type specifies the type of value a variable can store and how Java handles that value.
+  Types:
+  1. Int: It stores values of integer.
+  Ex: int age = 22;
+  2. Double : Stores the decimal values.
+  Ex: double price = 89.5
+  3. Float : float is used to store decimal numbers with less precision than double.
+  Ex: float price = 99.5f
+  Java treats decimal literals as double by default.
+99.5   → double
+99.5f  → float
+So we use f to tell Java that the value is a float.
+4. char : char is used to store a single character.
+Ex: char grade = 'A'
+    char initial = 'H'
+5. Boolean : It stores one of two values true or false
+Ex: boolean isPassed = true;
+boolean isLoggedIn = false;
+6. String: Used to store text or sequence of characters
+Ex: String name = "Hephzibah"
