@@ -149,7 +149,7 @@ Ex: int age = 20;
   The value of age changes from 20 to 22.      
   ## Datatypes
   A data type specifies the type of value a variable can store and how Java handles that value.
-  Types:
+  Types: 
   1. Int: It stores values of integer.
   Ex: int age = 22;
   2. Double : Stores the decimal values.
@@ -168,3 +168,14 @@ Ex: boolean isPassed = true;
 boolean isLoggedIn = false;
 6. String: Used to store text or sequence of characters
 Ex: String name = "Hephzibah"
+## Scanner
+Scanner is a class in java.util package. Used to read input from variaous sources, most commonly user input from the keyboard.
+- It provides methods to read different types of data such as integers, floating point numbers, strings.
+Ex: import java.util.Scanner;
+    Scanner sc = new Scanner (System.in);
+    int age = nextInt();
+1. import java.util.scanner -  Imports scanner from java.util package.
+2. new scanner (System.in) - creates new scanner object used to read data from standard input.
+3. sc - reference variable, used to access scanner methods.
+4. nextInt() - reads the next integer entered by the user.
+5. System.in - It represents the standard input stream, normally receives the input from keyboard  
