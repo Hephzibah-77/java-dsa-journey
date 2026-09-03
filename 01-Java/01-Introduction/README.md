@@ -191,3 +191,29 @@ Ex: import java.util.Scanner;
 Type Casting means converting a value from one datatype to another datatype.
 1. Widening Datatype: Converting a smaller datatype into larger datatype.Java does this automatically.
 order: byte → short → int → long → float → double
+2. Narrowing Datatype : Converting a larger datatype into smaller datatype.
+## Operators
+Operators are special symbols used to perform operation on values and variables.
+1. Arithmentic Operators: Used to perform mathematical operations of numbers.
+    1. + : Addition
+    2. - : Subtraction
+    3. * : Multiplication
+    4. / : Division
+    5. % : Remainder
+2. Relational Operators: Used to compare two values. The result is always a boolean value.
+    1. == : Equal to
+    2. != : Not Equal to
+    3. > : Greater than
+    4. < : Lesser than
+    5. >= : Greater than equal to
+    6. <= : Lesser than equal to
+3. Logical Operators: Used to combine or reverse conditions. produce result in true or false.
+    1. && : Logical AND : Both conditions must be True.
+    2. || : Logical OR: Returns true when atleast one of the condition is true
+    condition 1         condition 2     Result
+    True                True           True
+    True                False          True
+    False               True           True
+    False               False          False
+    3. ! : Logical NOT
+
