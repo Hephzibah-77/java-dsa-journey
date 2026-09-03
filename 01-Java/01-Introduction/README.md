@@ -168,6 +168,14 @@ Ex: boolean isPassed = true;
 boolean isLoggedIn = false;
 6. String: Used to store text or sequence of characters
 Ex: String name = "Hephzibah"
+7. Byte : It is a primitive integer datatype stores small whole numbers.
+size : 8 bits;
+Range : -128 to 127
+It stores whole numbers not decimals.
+8. Short : It is a primitive datatype stores whole numbers.
+Size : 16 bits
+Range : -32,768 to 32,767
+9. Long: size : 32 bits 
 ## Scanner
 Scanner is a class in java.util package. Used to read input from variaous sources, most commonly user input from the keyboard.
 - It provides methods to read different types of data such as integers, floating point numbers, strings.
@@ -178,4 +186,8 @@ Ex: import java.util.Scanner;
 2. new scanner (System.in) - creates new scanner object used to read data from standard input.
 3. sc - reference variable, used to access scanner methods.
 4. nextInt() - reads the next integer entered by the user.
-5. System.in - It represents the standard input stream, normally receives the input from keyboard  
+5. System.in - It represents the standard input stream, normally receives the input from keyboard .
+## Type Casting
+Type Casting means converting a value from one datatype to another datatype.
+1. Widening Datatype: Converting a smaller datatype into larger datatype.Java does this automatically.
+order: byte → short → int → long → float → double
