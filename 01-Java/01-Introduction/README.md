@@ -217,3 +217,155 @@ Operators are special symbols used to perform operation on values and variables.
     False               False          False
     3. ! : Logical NOT
 
+## # Java Conditional Statements — 
+##  Conditional Statement
+
+ A conditional statement is used to make decisions in a program by executing different blocks of code based on whether a condition is true or false.
+
+### Example
+
+```java
+int age = 20;
+
+if (age >= 18) {
+    System.out.println("Eligible");
+}
+```
+
+Here, Java checks whether `age >= 18` is `true`. If it is true, the code inside the `if` block executes.
+
+---
+
+1. `if` Statement
+The `if` statement executes a block of code only when a specified condition is true.
+
+### Syntax
+
+```java
+if (condition) {
+    // code
+}
+```
+
+### Example
+
+```java
+int number = 10;
+
+if (number > 0) {
+    System.out.println("Positive");
+}
+
+
+2. `if-else` Statement
+ The `if-else` statement executes one block of code when the condition is true and another block when the condition is false.
+
+### Syntax
+
+```java
+if (condition) {
+    // code if true
+} else {
+    // code if false
+}
+```
+
+### Example
+
+```java
+int number = 7;
+
+if (number % 2 == 0) {
+    System.out.println("Even");
+} else {
+    System.out.println("Odd");
+}
+```
+ 3.. `else-if`
+
+ An `else-if` ladder is used to check multiple conditions sequentially. The first condition that evaluates to true is executed.
+
+### Syntax
+
+```java
+if (condition1) {
+
+} else if (condition2) {
+
+} else {
+
+}
+```
+
+### Example
+int marks = 82;
+
+if (marks >= 90) {
+    System.out.println("Excellent");
+} else if (marks >= 75) {
+    System.out.println("Very Good");
+} else if (marks >= 50) {
+    System.out.println("Pass");
+} else {
+    System.out.println("Fail");
+}
+ 4. `switch` Statement
+ The `switch` statement is used to execute different blocks of code based on the value of an expression.
+
+### Syntax
+
+```java
+switch (value) {
+    case value1:
+        // code
+        break;
+
+    case value2:
+        // code
+        break;
+
+    default:
+        // code
+}
+
+
+### Example
+
+int day = 2;
+
+switch (day) {
+    case 1:
+        System.out.println("Monday");
+        break;
+
+    case 2:
+        System.out.println("Tuesday");
+        break;
+
+    case 3:
+        System.out.println("Wednesday");
+        break;
+
+    default:
+        System.out.println("Invalid day");
+}
+
+* case → represents a possible value.
+* break → exits the switch`and comes out of it.
+* default → executes when no case matches.
+
+5. Nested `if`
+ A nested `if` is an `if` statement placed inside another `if` statement.
+
+ Example
+int age = 20;
+boolean hasID = true;
+
+if (age >= 18) {
+
+    if (hasID) {
+        System.out.println("Entry allowed");
+    }
+}
+The second `if` is checked only after the first condition is true
+
