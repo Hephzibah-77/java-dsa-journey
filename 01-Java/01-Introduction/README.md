@@ -1,39 +1,5 @@
 # 01 - Introduction
 
-## 🎯 Objective
-Understand the basics of Java, how Java works, and write the first Java program.
-
-## 📚 Learning Roadmap
-
-- [x] What is Java?
-- [x] History of Java
-- [x] Features of Java
-- [x] JDK
-- [x] JRE
-- [x] JVM
-- [x] Compilation Process
-- [x] Platform Independence
-- [x] First Java Program
-- [x] Comments
-- [x] main() Method
-- [x] System.out.println()
-
-## 📈 Progress
-
-**Day 1:** Completed 2/11 Topics
-**Day 2:** Completed 6/11 Topics 
-**Day 3:** Completed 11/11 Topics 
-
-## ✅ Status
-
-- [ ] Theory Completed
-- [ ] Programs Completed
-- [ ] Notes Completed
-- [x] GitHub Commit Completed
-
----
-
-# 📝 Notes
 
 ## What is Java?
 
@@ -217,10 +183,43 @@ Operators are special symbols used to perform operation on values and variables.
     False               False          False
     3. ! : Logical NOT
 
-## # Java Conditional Statements — 
-##  Conditional Statement
+# Java Conditional Statements
 
- A conditional statement is used to make decisions in a program by executing different blocks of code based on whether a condition is true or false.
+## Conditional Statements
+
+A conditional statement is used to make decisions in a program by executing different blocks of code based on whether a condition is `true` or `false`.
+
+### Why Do We Use Conditional Statements?
+
+Conditional statements allow a program to make decisions based on different situations.
+
+For example:
+
+- If a person is 18 or older → they are eligible to vote.
+- If a number is even → print `Even`.
+- If marks are 90 or above → print `Grade A`.
+
+Java provides several ways to make decisions:
+
+1. `if`
+2. `if-else`
+3. `else-if`
+4. Nested `if`
+5. `switch`
+
+---
+
+## 1. `if` Statement
+
+The `if` statement executes a block of code only when the specified condition is `true`.
+
+### Syntax
+
+```java
+if (condition) {
+    // code to execute when condition is true
+}
+```
 
 ### Example
 
@@ -232,41 +231,37 @@ if (age >= 18) {
 }
 ```
 
-Here, Java checks whether `age >= 18` is `true`. If it is true, the code inside the `if` block executes.
+### How It Works
+
+Java checks:
+
+```text
+age >= 18
+```
+
+Since `20 >= 18` is `true`, the code inside the `if` block executes.
+
+Output:
+
+```text
+Eligible
+```
+
+If the condition is `false`, the code inside the `if` block is skipped.
 
 ---
 
-1. `if` Statement
-The `if` statement executes a block of code only when a specified condition is true.
+## 2. `if-else` Statement
+
+The `if-else` statement executes one block of code when the condition is `true` and another block when the condition is `false`.
 
 ### Syntax
 
 ```java
 if (condition) {
-    // code
-}
-```
-
-### Example
-
-```java
-int number = 10;
-
-if (number > 0) {
-    System.out.println("Positive");
-}
-
-
-2. `if-else` Statement
- The `if-else` statement executes one block of code when the condition is true and another block when the condition is false.
-
-### Syntax
-
-```java
-if (condition) {
-    // code if true
+    // code if condition is true
 } else {
-    // code if false
+    // code if condition is false
 }
 ```
 
@@ -281,9 +276,52 @@ if (number % 2 == 0) {
     System.out.println("Odd");
 }
 ```
- 3.. `else-if`
 
- An `else-if` ladder is used to check multiple conditions sequentially. The first condition that evaluates to true is executed.
+### How It Works
+
+Java checks:
+
+```text
+number % 2 == 0
+```
+
+For `number = 7`:
+
+```text
+7 % 2 = 1
+```
+
+So the condition is `false`.
+
+Therefore, the `else` block executes.
+
+Output:
+
+```text
+Odd
+```
+
+### Important
+
+`=` is the **assignment operator**.
+
+```java
+int number = 10;
+```
+
+`==` is the **equality comparison operator**.
+
+```java
+number == 10
+```
+
+---
+
+## 3. `else-if` Statement
+
+An `else-if` ladder is used to check multiple conditions sequentially.
+
+Java checks the conditions from top to bottom. The **first condition that evaluates to `true`** is executed, and the remaining conditions are skipped.
 
 ### Syntax
 
@@ -292,12 +330,16 @@ if (condition1) {
 
 } else if (condition2) {
 
+} else if (condition3) {
+
 } else {
 
 }
 ```
 
 ### Example
+
+```java
 int marks = 82;
 
 if (marks >= 90) {
@@ -309,13 +351,101 @@ if (marks >= 90) {
 } else {
     System.out.println("Fail");
 }
- 4. `switch` Statement
- The `switch` statement is used to execute different blocks of code based on the value of an expression.
+```
+
+### How It Works
+
+For:
+
+```text
+marks = 82
+```
+
+Java checks:
+
+```text
+82 >= 90  → false
+82 >= 75  → true
+```
+
+Therefore:
+
+```text
+Very Good
+```
+
+is printed.
+
+Once a condition is `true`, Java does not continue checking the remaining `else-if` conditions.
+
+---
+
+## 4. Nested `if`
+
+A nested `if` is an `if` statement placed inside another `if` statement.
+
+### Syntax
+
+```java
+if (condition1) {
+
+    if (condition2) {
+        // code
+    }
+
+}
+```
+
+### Example
+
+```java
+int age = 20;
+boolean hasID = true;
+
+if (age >= 18) {
+
+    if (hasID) {
+        System.out.println("Entry allowed");
+    }
+
+}
+```
+
+### How It Works
+
+First Java checks:
+
+```text
+age >= 18
+```
+
+If that condition is `true`, Java enters the outer `if`.
+
+Then it checks:
+
+```text
+hasID
+```
+
+Only when both required conditions are satisfied does the inner block execute.
+
+### Important Concept
+
+The inner `if` is checked **only after the outer `if` condition is true**.
+
+---
+
+## 5. `switch` Statement
+
+The `switch` statement is used to execute different blocks of code based on the value of an expression.
+
+It is useful when we need to compare one value against several specific values.
 
 ### Syntax
 
 ```java
 switch (value) {
+
     case value1:
         // code
         break;
@@ -327,13 +457,15 @@ switch (value) {
     default:
         // code
 }
-
+```
 
 ### Example
 
+```java
 int day = 2;
 
 switch (day) {
+
     case 1:
         System.out.println("Monday");
         break;
@@ -349,23 +481,222 @@ switch (day) {
     default:
         System.out.println("Invalid day");
 }
+```
 
-* case → represents a possible value.
-* break → exits the switch`and comes out of it.
-* default → executes when no case matches.
+Output:
 
-5. Nested `if`
- A nested `if` is an `if` statement placed inside another `if` statement.
+```text
+Tuesday
+```
 
- Example
+### Important Parts of `switch`
+
+#### `case`
+
+Represents a possible value that can be matched.
+
+```java
+case 1:
+```
+
+#### `break`
+
+Exits the `switch` statement and prevents execution from continuing into the next case.
+
+```java
+break;
+```
+
+#### `default`
+
+Executes when none of the cases match.
+
+```java
+default:
+```
+
+### Example
+
+If:
+
+```java
+int day = 5;
+```
+
+and there is no `case 5`, the `default` block executes.
+
+Output:
+
+```text
+Invalid day
+```
+
+---
+
+## Switch vs If-Else
+
+### `switch`
+
+Used mainly when checking **specific values**.
+
+Example:
+
+```java
+switch (choice) {
+    case 1:
+        // addition
+        break;
+
+    case 2:
+        // subtraction
+        break;
+}
+```
+
+### `if-else`
+
+Used when checking **conditions, comparisons, or ranges**.
+
+Example:
+
+```java
+if (marks >= 90) {
+    System.out.println("Grade A");
+} else if (marks >= 75) {
+    System.out.println("Grade B");
+}
+```
+
+---
+
+## 6. Logical Operators in Conditional Statements
+
+Logical operators are used to **combine or reverse boolean conditions**.
+
+Java provides three main logical operators:
+
+| Operator | Name | Meaning |
+|----------|------|---------|
+| `&&` | AND | Both conditions must be true |
+| `||` | OR | At least one condition must be true |
+| `!` | NOT | Reverses the boolean value |
+
+---
+
+### `&&` — AND Operator
+
+The `&&` operator returns `true` only when **both conditions are true**.
+
+### Example
+
+```java
 int age = 20;
 boolean hasID = true;
 
-if (age >= 18) {
-
-    if (hasID) {
-        System.out.println("Entry allowed");
-    }
+if (age >= 18 && hasID) {
+    System.out.println("Entry allowed");
 }
-The second `if` is checked only after the first condition is true
+```
+
+Java checks:
+
+```text
+age >= 18 → true
+hasID     → true
+
+true && true → true
+```
+
+Therefore:
+
+```text
+Entry allowed
+```
+
+### AND Truth Table
+
+| Condition 1 | Condition 2 | Result |
+|------------|------------|--------|
+| `true` | `true` | `true` |
+| `true` | `false` | `false` |
+| `false` | `true` | `false` |
+| `false` | `false` | `false` |
+
+**Remember:** `&&` means **both must be true**.
+
+---
+
+### `||` — OR Operator
+
+The `||` operator returns `true` when **at least one condition is true**.
+
+### Example
+
+```java
+boolean hasStudentID = false;
+boolean hasInvitation = true;
+
+if (hasStudentID || hasInvitation) {
+    System.out.println("Entry allowed");
+}
+```
+
+Java checks:
+
+```text
+false || true → true
+```
+
+Therefore:
+
+```text
+Entry allowed
+```
+
+### OR Truth Table
+
+| Condition 1 | Condition 2 | Result |
+|------------|------------|--------|
+| `true` | `true` | `true` |
+| `true` | `false` | `true` |
+| `false` | `true` | `true` |
+| `false` | `false` | `false` |
+
+**Remember:** `||` means **at least one must be true**.
+
+---
+
+### `!` — NOT Operator
+
+The `!` operator reverses a boolean value.
+
+```text
+!true  → false
+!false → true
+```
+
+### Example
+
+```java
+boolean isStudent = true;
+
+System.out.println(!isStudent);
+```
+
+Output:
+
+```text
+false
+```
+
+Because:
+
+```text
+isStudent  → true
+!isStudent → false
+```
+
+**Remember:** `!` means **reverse the boolean value**.
+
+---
 
