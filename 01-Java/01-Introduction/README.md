@@ -700,3 +700,43 @@ isStudent  → true
 
 ---
 
+## LOOP :
+A loop is a programming structure used to repeat a block of code, while a condition is satisfied.
+   Ex: hello
+       hello
+       hello
+       hello
+       hello
+  Here  Without loop we will write the code 5 times. With Loop we will tell the java to repeat the code 5 times.
+
+  # 1. FOR LOOP:
+  For loop in java is a control statement used to execute block of code until the condition becomes true. The for loop stops when the condition becomes false.
+  Syntax: 
+      for (initialization; condition; update){
+        // code to repeat
+      }
+    EX: for (int i=0; i<5; i++) {
+        System.out.println(i);
+    }
+    Here, i=0 - Initialization
+          i<5 - condition
+          i++ - update.
+- Increment & Decrement:
+Increment : a++ - post-increment (use and increase)
+            ++a - pre-increment (increase and use)
+    Post-Increment Example: int a = 5;
+                            int b = a++
+            So, Here first we use 'a' and then we will increase it.
+                      b = 5;
+                      a = 6;
+    Pre-Increment EX: int a = 5;
+                      int b = ++a 
+            Here, first we will increase 'a' and then we will use it.
+                     a = 6;
+                     b = 6;
+- Decrement: a-- : Post-Decrement
+             --a : Pre-Decrement
+## What is Count?
+A count variable keeps track of how many times something happens.
+Ex: int count = 0; // I have counted 0 things.
+    count++; // I have found one more thing, so increase the count by 1.
