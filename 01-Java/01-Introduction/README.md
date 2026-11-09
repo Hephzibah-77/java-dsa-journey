@@ -740,3 +740,50 @@ Increment : a++ - post-increment (use and increase)
 A count variable keeps track of how many times something happens.
 Ex: int count = 0; // I have counted 0 things.
     count++; // I have found one more thing, so increase the count by 1.
+## Digit Sum :
+Sum = 0; because we want to add each digit to the sum. Since we hadn't started yet the starting sum is 0.
+## Digit Counting:
+Finding how many digits a number contains.
+      int count = 0; 
+      int remainder = number % 10;
+      number = number / 10;
+      count++;
+    Every time we remove a digit, we increase count.
+## Reversing a Number:
+int reverse = 0;
+reverse = reverse * 10 + remainder.
+## Palindrome:
+Even after reversing the number we will get the original number.
+EX: 121,1331
+ int originalNumber - sc.nextInt;
+ int number = originalNumber;
+ for(){
+    int remainder = number % 10;
+    reverse = reverse * 10 + remainder;
+    number = number / 10;
+ }
+ if (reverse == originalNumber){
+    System.out.println("Palindrome");
+ }else{
+    System.out.println("Not a Palindrome");
+ }
+ ## Nested Loop:
+ A nested loop is a loop inside another loop. The outer loop controls the outer iterations (i), and the inner loop controls its own iterations (j). For every single iteration of the outer loop, the inner loop executes completely before the outer loop moves to its next iteration.
+NOTE:
+- i and j are variable names, not fixed rules.
+- The outer loop doesn't always represent rows, and the inner loop doesn't always represent columns. That's a common convention in pattern programs.
+When both loops have fixed iteration counts:
+Total iterations = Outer iterations * Inner iterations
+## While Loop:
+A while loop runs the block of code until the condition becomes true.
+A while does the same kind of repetition like for loop, but the Structure is Different.
+# Syntax :
+           while (condition) {
+            // code
+           }
+    EX: int i = 1;
+        while (i <= 3){
+            System.out.println(i);
+            i++; 
+        }
+Here, i++ is necessary because without i++ the i stays at 1 and keep running indefinitely.
