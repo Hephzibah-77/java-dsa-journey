@@ -787,3 +787,42 @@ A while does the same kind of repetition like for loop, but the Structure is Dif
             i++; 
         }
 Here, i++ is necessary because without i++ the i stays at 1 and keep running indefinitely.
+## METHOD :
+A method is a block of code used to execute or perform tasks.
+For example, To add numbers,
+Without Method, we write the addition logic repeatedly whenever needed.
+With Method, we write the logic and call it whenever needed. No need to write again and again.
+
+Ex: public class Main {
+    static void greet() {
+        System.out.println("Hello World");
+    }
+    public static void main(String[] args) {
+        greet();
+    }
+}
+- Static void greet() : Declares a method.
+- System.out.println(" ") : Contains the task performed by the method.
+- greet() : Calls the method to execute it.
+## Method Declaration :
+Creating or defining a method.
+  static void greet() {
+    System.out.println("Hello!");
+}
+- Static : Allows calling the method directly from the static main method.
+- void - Method does not return a value.
+- greet - Method name.
+- () : Holds Parameters, if any.
+- {} : Contains the method body.
+## Method Calling :
+It executes the method.
+     greet();
+## Parameters vs Arguments :
+- Parameter : It is a variable that is declared inside the method paranthesis, that receives a value when the method is passed.
+- Arguments : Actual values passed when a method is called.
+Ex: static void greet(int a, int b) { //Parameters
+    System.out.println(a + b);
+}
+public static void main(String[] args) {
+    add (10, 20); //Argument
+}
